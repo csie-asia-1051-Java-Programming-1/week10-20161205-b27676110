@@ -4,11 +4,29 @@
  * Date: 2016/12/05
  * Author: 1050210XX 周永振老師
  */
-
+import java.util.Scanner;
 public class ex01 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		Scanner scn = new Scanner(System.in);
+		int data [] = {0,1,3,1,6,2,9,5,9,10};
+		int data1 [] = {0,1,3,1,6,2,9,5,9,10};
+		int sum = 0;
+		
+		for(int i = 0;i<data.length;i++){
+		System.out.print(data[i]+" ");
+		}
+		System.out.println();
+		for(int i = 0;i<data.length-1;i++){
+		for(int j = 0;j<data1.length-1;j++){
+			data1[j+1]=data[i+1]+data1[j];
+		}
+		}
+		for(int i = 0;i<data1.length;i++){
+			System.out.print(data1[i]+" ");
+		}
+
 
 	}
 
